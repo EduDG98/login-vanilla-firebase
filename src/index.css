@@ -28,7 +28,7 @@ body {
 
 .login-container {
   width: 400px;
-  height: 300px;
+  min-height: 320px;
   background-color: var(--main-color);
   border-radius: 5px;
   display: flex;
@@ -70,8 +70,9 @@ input {
   100% {
     transform: scale(1);
   }
+
   50% {
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
 }
 
@@ -92,4 +93,31 @@ label:hover {
 
 button:active {
   transform: scale(1.05);
+}
+
+.show {
+  width: 250px;
+  height: 100px;
+  background-color: #867070;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: wellcome 3s infinite;
+}
+
+@keyframes wellcome {
+  0%,
+  100% {
+    transform: scale(1);
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: scale(2);
+    transform: rotate(-5deg);
+  }
 }

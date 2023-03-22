@@ -36,7 +36,6 @@ const handleLogin = (event) => {
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      console.log(error);
       errorDiv.classList.add("error");
       errorDiv.textContent = "Wrong user or password";
       label2.appendChild(errorDiv);
